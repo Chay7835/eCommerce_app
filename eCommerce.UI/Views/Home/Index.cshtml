@@ -1,0 +1,262 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .body {
+        background-color: wheat;
+    }
+
+    .card {
+        border-radius:8%;
+        border-top-left-radius:8%;
+        border-top-right-radius:8%;
+        box-shadow: 0 4px 8px black;
+        transition: 0.8s;
+    }
+
+        .card:hover {
+            box-shadow: 0 14px 22px black;
+        }
+
+
+    .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        text-align: center;
+        width: 95%;
+        margin: auto; /* Center the container horizontally */
+    }
+
+     .carousel {
+        width: 100%;
+        overflow: hidden; /* Ensure the images don't overflow */
+    }
+
+    .smallcar1 {
+        height: 25px;
+    }
+</style>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-22012024-MainBannerDailyChanging-Z1-P4-SS24-upto30.gif" class="d-block w-100" alt="Third Page">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-21012024-TOPBANNERMONETISATION-Z4-P2-Metro-min40.jpg" class="d-block w-100" alt="First Image">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-22012024-uhphim-z11-p1-GO21-YOHO-Min40.jpg" class="d-block w-100" alt="Second Image">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-MHP-19012024-topbannermonitised-z2-p1-uspa-upto50.jpg" class="d-block w-100" alt="Third Page">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-21012024-TOPBANNERMONETISATION-Z4-P2-Mochi-Min40.jpg" class="d-block w-100" alt="Fourth Page">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-22124-DailyBanner-Z5-P2-woodland-puma-min40.jpg" class="d-block w-100" alt="Fifth Page">
+        </div>
+    </div>
+    <button style="color:red" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-NewYearsFines-5-Nike-USPA-Min35.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="@Url.Content("~/Images/card2.jpg")" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-Footwear-Puma-USPA-Min40.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-12012024-trustmarker.jpg" />
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-Footwear-Campus-Arbunore-Min50.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-Footwear-Shopall.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-Footwear-Nike-Puma-Min35.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/1440X128%20(1)111.png" class="d-block w-100" alt="Third Page">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/Mobikwik-1440x128%202.jpg" class="d-block w-100" alt="First Image">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/07122023-paytm-1440x128%202.jpg" class="d-block w-100" alt="Second Image">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/BOB-1440x128.jpg" class="d-block w-100" alt="Third Page">
+        </div>
+        <div class="carousel-item">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/Paytmheart-1440x128%202-9.jpg" class="d-block w-100" alt="Fourth Page">
+        </div>
+    </div>
+</div>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-NewYearsFines-1-Puma-Adidas-Min40.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-Footwear-Louisphilippe-Redchief-Min40.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-NewYearsFines-4-Crocs-Gap-Min40.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-12012024-topstyle-sheader.jpg" />
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-Footwear-LeeCooper-Woodland-Min40.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-Footwear-Crocs-Adidas-Min30.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05012024-Footwear-Stevemadden-Clarks-Min50.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-12012024-celeb-header.jpg" />
+<br />
+<br />
+<div class="container" style="margin-bottom:10px">
+    <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="@Url.Content("~/Images/card10.jpg")" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="@Url.Content("~/Images/card14.jpg")" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 20rem;">
+                <img src="@Url.Content("~/Images/card15.jpg")" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+<br/>

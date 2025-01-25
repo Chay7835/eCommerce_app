@@ -1,0 +1,362 @@
+﻿@using eCommerce.Models;
+
+@{
+    ViewData["Title"] = "Product Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Product
+<div class="text-center">
+    <h1>@ViewBag.Title @Model.ProductName</h1>
+</div>
+<hr />
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f5f5f5;
+       
+    }
+
+    .final-container {
+        display: flex;
+        margin: 50px auto;
+        height: 800px;
+        width: 80%;
+        background-color: white;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .Other-products {
+        display: flex;
+        margin: 50px auto;
+        height: 250px;
+        width: 80%;
+        background-color: white;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom:10px;
+    }
+    .other-product {
+        height:95%;
+        width:100%;
+        border-radius:8%;
+        background-size:cover;
+    }
+    .other-product:hover {
+            transform: scale(1.1);
+    }
+    .other-image {
+        height: 60px;
+        margin-top: 8px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        border: 1px solid black;
+    }
+
+        .other-image:hover {
+            transform: scale(1.1);
+        }
+
+    .Main-image {
+        margin-top: 15px;
+        height: 450px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .text {
+        padding: 20px;
+    }
+
+    h3 {
+        color: #333;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        color: #4CAF50;
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    p {
+        color: #555;
+        margin: 20px 0 10px 0;
+        line-height: 1.5;
+    }
+
+    h5 {
+        font-size: 15px;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    label,
+    .add span,
+    .color span {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 5px 10px 10px 0;
+    }
+
+    .size {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: #eee;
+        border-radius: 50%;
+        margin: 10px 10px 10px 0;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .size:hover {
+            background-color: #ddd;
+        }
+
+    .add label,
+    .add span {
+        background: #4CAF50;
+        border: 1px solid #4CAF50;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .add label {
+        padding: 10px 20px;
+        border-radius: 50px;
+        line-height: 0;
+    }
+
+    .add span:hover {
+        background-color: #45a049;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        outline: none;
+        background: #4CAF50;
+        color: white;
+        margin-top: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    .quantity-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .quantity-btn {
+        background-color: #45a049;
+        color: white;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 5px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .quantity-btn:hover {
+            background-color: #4CAF50;
+        }
+
+    .quantity {
+        font-size: 20px;
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #45a049;
+        border-radius: 8px;
+    }
+
+    .review-container {
+        margin-top: 20px;
+        background-color: white;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .review-header {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .review {
+        margin-bottom: 15px;
+    }
+
+    .review-author {
+        font-weight: bold;
+        color: ;
+    }
+
+    .review-text {
+        color: #555;
+    }
+
+    .rating {
+        color: #f8c102;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .Discount {
+        width: fit-content;
+        border-radius: 10%;
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+    }
+
+    /* .color-representation {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+        } */
+    .price {
+        color: green;
+        display: inline;
+    }
+
+    #actualoverline {
+        color: black;
+        text-decoration: line-through;
+    }
+    
+
+</style>
+<div class="final-container">
+    <div class="container text-center">
+        <div class="row" style="align-items: flex-start">
+            <div class="col-1">
+                <div class="Mul" style="margin-top:10px">
+                    <img class="other-image" src="@Url.Content(Model.Picture)" />
+                    <img class="other-image" src="@Url.Content(Model.Picture)" />
+                    <img class="other-image" src="@Url.Content(Model.Picture)" />
+                    <img class="other-image" src="@Url.Content(Model.Picture)" />
+                    <img class="other-image" src="@Url.Content(Model.Picture)" />
+                </div>
+            </div>
+            <div class="col-5">
+                <img class="Main-image"
+                     src="@Url.Content(Model.Picture)" />
+            </div>
+            <div class="col-6">
+                <div class="text" style="text-align: start">
+                    <h3> @Model.ProductName </h3>
+
+                    <h4 class="price">@ViewBag.DiscountedAmount₹</h4>
+                    <h6 class="price" id="actualoverline">@Model.UnitPrice₹</h6>
+                    <h6>@Model.Discount% Discount</h6>
+                    <h6 class="Discount">Best Saving Deal</h6>
+                    <h4 style="color:black">
+                        It is @Model.Description
+                    </h4>
+
+                    @*  <h5 style="margin-top: 20px;"><b>Available Colors</b></h5>
+                    <div class="color-representation" style="background-color: #EFE0DE;"></div>
+                    <div class="color-representation" style="background-color: #AB8ED1;"></div>
+                    <div class="color-representation" style="background-color: #F04D44;"></div>
+                    <div class="color-representation" style="background-color: #45a049;"></div>
+                    <div class="color-representation" style="background-color: #4CAF50;"></div> *@
+
+                    <h5><b>Size</b></h5>
+                    <div>
+                        <span class="size">6</span>
+                        <span class="size">7</span>
+                        <span class="size">8</span>
+                        <span class="size">9</span>
+                        <span class="size">10</span>
+                        <span class="size">11</span>
+                        <span class="size">12</span>
+                    </div>
+                    <h5><b>Number</b></h5>
+                    <div class="quantity-container">
+                        <button class="quantity-btn" onclick="changeQuantity('-')">-</button>
+                        <span class="quantity">1</span>
+                        <button class="quantity-btn" onclick="changeQuantity('+')">+</button>
+                    </div>
+                    <button>Add to Bag</button>
+
+                    <div class="review-container">
+                        <div class="review-header">Customer Reviews</div>
+
+                        <div class="review">
+                            <div class="review-author">John Doe</div>
+                            <div class="rating">★★★★☆</div>
+                            <div class="review-text">
+                                "These running shoes are fantastic! They are comfortable and provide excellent support during workouts. I highly recommend them."
+                            </div>
+                        </div>
+
+                        <div class="review">
+                            <div class="review-author">Jane Smith</div>
+                            <div class="rating">★★★★★</div>
+                            <div class="review-text">
+                                "I've been using these shoes for my daily runs, and they've held up really well. Great quality and stylish design!"
+                            </div>
+                        </div>
+
+                        <!-- Add more reviews as needed -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h3 style="text-align:center; margin-top:-20px">You may also like</h3>
+<div class="Other-products" style="margin-top: 20px;">
+    <div class="col-3">
+        <img class="other-product" src="@Url.Content("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXVwCrLPTVBtX4hm0nNaXO18eP132vnSL24A&usqp=CAU")" />
+    </div>
+    <div class="col-3">
+        <img class="other-product" src="@Url.Content("https://assetscdn1.paytm.com/images/catalog/product/F/FO/FOOSKECHERS-SPOSHOE749803D11EB7D/1563405628414_0..jpg")" />
+    </div>
+    <div class="col-3">
+        <img class="other-product" src="@Url.Content("https://contents.mediadecathlon.com/p2393894/ae11c369077717da979826d33db65b1c/p2393894.jpg?format=auto&quality=70&f=650x0")" />
+    </div>
+    <div class="col-3">
+        <img class="other-product" src="@Url.Content("https://pyxis.nymag.com/v1/imgs/78b/839/e41b8693c622af9f596b4a237194c8ee5c-men-s-workout-shoes-032.1x.rsquare.w1400.jpg")" />
+    </div>
+</div>
+<br />
+<br />

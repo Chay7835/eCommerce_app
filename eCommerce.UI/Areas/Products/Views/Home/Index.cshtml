@@ -1,0 +1,47 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using eCommerce.Models
+
+@{
+    ViewData["Title"] = "Products List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/path/to/your/external/styles.css">
+<style>
+    .cardborder {
+        border-radius : 10%;
+    }
+</style>
+
+@model IEnumerable<Product>
+
+<div class="container mt-5">
+    <h1 class="text-center">@ViewBag.PageTitle</h1>
+    <p class="text-center">@ViewBag.PageSubTitle</p>
+    <br/>
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100" id="cardborder">
+                    <img src="@Url.Content(@product.Picture)" class="card-img-top" alt="@product.ProductName" height="250">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <p class="card-text">@product.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="text-center">
+                            <a class="btn btn-outline-success btn-sm" asp-area="Products" asp-controller="Home"
+                               asp-action="Details" asp-route-id="@product.ProductId">Show Details</a>
+                            <a class="btn btn-outline-dark btn-sm" 
+                               asp-area="Carts" 
+                               asp-controller="Home"
+                               asp-action="AddToCart" 
+                               asp-route-id="@product.ProductId">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
