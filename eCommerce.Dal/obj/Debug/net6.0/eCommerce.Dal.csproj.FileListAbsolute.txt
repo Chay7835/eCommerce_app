@@ -1,0 +1,28 @@
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Dal.deps.json
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Dal.dll
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Dal.pdb
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.AssemblyInfoInputs.cache
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.AssemblyInfo.cs
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.csproj.CoreCompileInputs.cache
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.dll
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\obj\Debug\net6.0\refint\eCommerce.Dal.dll
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.pdb
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\eCommerce\eCommerce.Dal\obj\Debug\net6.0\ref\eCommerce.Dal.dll
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Dal.deps.json
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Dal.runtimeconfig.json
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Dal.dll
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Dal.pdb
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Models.dll
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\bin\Debug\net6.0\eCommerce.Models.pdb
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.csproj.AssemblyReference.cache
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.AssemblyInfoInputs.cache
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.AssemblyInfo.cs
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.csproj.CoreCompileInputs.cache
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.csproj.CopyComplete
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.dll
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\refint\eCommerce.Dal.dll
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.pdb
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\eCommerce.Dal.genruntimeconfig.cache
+C:\Users\lally\OneDrive\Documents\BYTE Training\ASP.NET Core\Day - 7\eCommerce\eCommerce.Dal\obj\Debug\net6.0\ref\eCommerce.Dal.dll
